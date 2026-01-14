@@ -1,0 +1,20 @@
+.Uber_Request-btn {
+      color: white;
+      background-color: black;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      transition-duration: background-color 0.2s, color 0.15s;
+    }
+
+    .Uber_Request-btn:hover {
+      cursor: pointer;
+      color: black;
+      background-color: white;
+    }
+
+    .Uber_Request-btn:active {
+      color: white;
+      background-color: black;
+    }

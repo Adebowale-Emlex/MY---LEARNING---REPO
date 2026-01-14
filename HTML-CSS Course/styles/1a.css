@@ -1,0 +1,19 @@
+
+    .Click-btn{
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition-duration: color 0.20s,background-color 0.20s;
+    }
+    .Click-btn:hover{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+    .Click-btn:active{
+        opacity: 0.5;
+    }
+

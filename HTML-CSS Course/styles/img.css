@@ -1,0 +1,9 @@
+.img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}

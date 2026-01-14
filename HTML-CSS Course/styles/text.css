@@ -1,0 +1,39 @@
+  p{
+    font-family: Arial;
+    font-size: 14px;
+  }
+
+  .video-title {
+    font-size: 18px;
+    font-weight:700;
+    line-height: 24px;
+  }
+  .views-count {
+     color: grey;
+     font-family: Arial;
+     font-size:14px;
+  }
+  .MQ{
+    color: grey;
+     font-display: block;
+     margin-top: 20px;
+  }
+  .about{
+     color: grey;
+     margin-top: 20px;
+     line-height: 20px;
+  }
+  .apple-sale{
+    background-color: rgb(227, 65, 64);
+    color: white;
+    margin: 0 8px;
+    padding: 18px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .cta{
+    transition: text-decoration 0.15s;
+  }
+  .cta:hover{
+    text-decoration: underline;
+  }

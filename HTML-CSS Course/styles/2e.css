@@ -1,0 +1,40 @@
+ .apply-btn{
+        color: white;
+        background-color: rgb(10, 102, 194);
+        border-width:1px;
+        border-color: rgb(10, 102, 194);
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition-duration: background-color 0.2s, color 0.15s;;
+    }
+    .apply-btn:hover{
+        cursor: pointer;
+        color:rgb(10, 102, 194);
+        background-color: white;
+    }
+    .apply-btn:active{
+        opacity: 0.5;
+    }
+    .save-btn{
+        background-color: white;
+        color: rgb(10, 102, 194);
+        border-width:1px;
+        border-color: rgb(10, 102, 194);
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+       transition-duration: background-color 0.2s, color 0.15s;;
+    }
+    .save-btn:hover{
+        cursor: pointer;
+        background-color:  rgb(10, 102, 194);;
+        color: white;
+    }
+    .save-btn:active{
+        opacity: 0.5;
+    }

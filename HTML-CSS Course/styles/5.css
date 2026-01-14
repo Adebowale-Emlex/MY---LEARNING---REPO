@@ -1,0 +1,146 @@
+.tahoma{
+    font-size:xx-large;
+    font-family: tahoma;
+    font-weight: bolder;
+}
+.arial{
+    font-size: xx-large;
+    font-family: arial;
+    font-weight:  700;
+}
+.set{
+    font-size: small;
+    font-family: arial;
+    color: red;
+    font-style: italic;
+}
+.HTCC{
+    font-family: verdana;
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.BP{
+    font-family:verdana;
+    font-size: small;
+    color: grey;
+    margin-top: 0;   
+}
+.T{
+    font-family: verdana;
+    font-size: medium;   
+}
+.GET{
+    font-family: verdana;
+    color:white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.GET:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.GET:active{
+     color: black;
+     background-color: rgb(255, 255, 255);
+}
+.shop{
+    font-size: xx-large;
+    font-family: arial;
+    font-weight:  700;
+    text-align: center;
+}
+.see{
+    font-size: small;
+    font-family: arial;  
+}
+.learn{
+    color: blue;
+    font-size: small;
+    font-family: arial;
+}
+.learn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.new{
+    font-size: small;
+    font-family: arial;
+    color: red;
+    text-align: center;
+}
+.MAC{
+    font-size: large;
+    font-family: arial;
+    font-weight:  700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.super{
+    font-size: xx-large;
+    font-family: arial;
+    font-weight:bolder; 
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.Price{
+    font-size: smaller;
+    font-family: arial;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.center-btn{
+    font-family: verdana;
+    color:white;
+    background-color: rgb(5, 31, 119);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: block;
+    margin: 0 auto;
+}
+.center-btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.center-btn:active{
+     color: black;
+     background-color: rgb(255, 255, 255);
+}
+.TAG{
+    font-size: 50px;
+    margin-bottom: 0PX;
+}
+.USD{
+    font-size: 20px;
+    color: grey;
+}
+.percentage{
+    color: green;
+}
+.time{
+    font-size:20px ;
+}
+.pe{
+    color: red;
+}
+.FCCO{
+    font-weight: bold;
+}
+.FCC1{
+    color: grey;
+    font-size: medium;
+}
+.chp{
+    color: rgb(7, 67, 158);
+}
+.chp:hover{
+    text-decoration:underline ;
+}
+
+.nigeria{
+    font-family: 'Roboto';
+}

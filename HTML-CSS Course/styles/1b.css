@@ -1,0 +1,34 @@
+.name-btn{
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition-duration: background-color 0.2s, color 0.15s;
+    }
+    .name-btn:hover{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+    .name-btn:active{
+        opacity: 0.5;
+    }
+    .food-btn{
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition-duration: 0.20ms;
+    }
+    .food-btn:hover{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+    .food-btn:active{
+        opacity: 0.5;
+    }
