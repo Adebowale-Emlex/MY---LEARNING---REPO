@@ -1,0 +1,253 @@
+/* ===================================
+   GLOBAL STYLES & RESPONSIVE SETTINGS
+   =================================== */
+
+/* Reset default margins and padding, enable box-sizing for better control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===================================
+   HEADER STYLING
+   =================================== */
+
+.Header {
+    color: rgb(247, 246, 246);
+    background-color: rgb(61, 159, 240);
+    width: 100%;
+    /* Use clamp() for responsive font: (min, preferred, max) */
+    font-size: clamp(20px, 5vw, 32px);
+    font-family: arial;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+/* ===================================
+   WELCOME TAG STYLING
+   =================================== */
+
+.welcome-tag {
+    color: black;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* Responsive font size using clamp */
+    font-size: clamp(16px, 4vw, 22px);
+    margin: 15px 0;
+}
+
+/* ===================================
+   NAVIGATION/SITE TAGS STYLING
+   =================================== */
+
+.site-tags {
+    background-color: rgb(215, 248, 250);
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Flexbox layout for responsive navigation */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Individual navigation tags - responsive styling */
+.about-tag {
+    padding: 12px 15px;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: bolder;
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+}
+
+.contact-tag {
+    padding: 12px 15px;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: bolder;
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+}
+
+.asapfrontend-tag {
+    padding: 12px 15px;
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: bolder;
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* ===================================
+   BACKGROUND SECTION STYLING
+   =================================== */
+
+.p-background {
+    background-color: rgb(137, 203, 241);
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.intro-tag {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Paragraphs inside background section */
+.p-background p {
+    margin-bottom: 15px;
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+/* ===================================
+   BOX MODEL STYLING
+   =================================== */
+
+.box-model {
+    border: 2px solid black;
+    /* clamp(min, preferred, max) - scales responsively */
+    padding: clamp(15px, 5vw, 30px);
+    margin: clamp(15px, 4vw, 30px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
+}
+
+/* ===================================
+   IMAGE STYLING
+   =================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ===================================
+   BUTTON STYLING
+   =================================== */
+
+button {
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 30px);
+    font-size: clamp(14px, 2.5vw, 16px);
+    cursor: pointer;
+    background-color: rgb(61, 159, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(41, 130, 200);
+}
+
+/* ===================================
+   LIST STYLING
+   =================================== */
+
+h1 {
+    font-size: clamp(20px, 5vw, 28px);
+    margin: 20px 0 10px 0;
+    color: rgb(61, 159, 240);
+}
+
+ul, ol {
+    padding-left: clamp(20px, 5vw, 40px);
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+/* ===================================
+   TABLET SCREENS (max-width: 768px)
+   Adjusts layout for tablets
+   =================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 8px;
+    }
+    
+    .site-tags {
+        gap: 5px;
+        padding: 8px;
+    }
+    
+    .about-tag, .contact-tag, .asapfrontend-tag {
+        padding: 10px 12px;
+        min-width: 100px;
+    }
+    
+    .box-model {
+        margin: clamp(10px, 3vw, 20px);
+    }
+}
+
+/* ===================================
+   MOBILE SCREENS (max-width: 480px)
+   Optimized layout for smartphones
+   =================================== */
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    /* Stack navigation items vertically on mobile */
+    .site-tags {
+        flex-direction: column;
+        gap: 8px;
+        padding: 5px;
+    }
+    
+    /* Make nav items full-width on mobile */
+    .about-tag, .contact-tag, .asapfrontend-tag {
+        padding: 8px 10px;
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    /* Reduce spacing on mobile */
+    .box-model {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .p-background {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        margin: 15px 0 8px 0;
+    }
+    
+    /* Make button full-width on mobile */
+    button {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
