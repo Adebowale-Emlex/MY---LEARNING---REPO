@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+/* Minimal modal visibility control (keep popup functional without styling) */
+.skill-modal {
+  display: none;
+}
+
+.skill-modal.active {
+  display: block;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
@@ -360,10 +369,6 @@ html {
   .stat-number {
     font-size: 2rem;
   }
-  
-  .social-links {
-    gap: 1rem;
-  }
 }
 
 /* Very small phones (e.g., 320-360px width) */
@@ -621,6 +626,175 @@ html {
   opacity: 0.7;
   line-height: 1.6;
 }
+
+/* Skills Hint Text */
+.skills-hint {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.skill-card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  box-shadow: 0 15px 50px rgba(14, 165, 233, 0.15);
+  transform: translateY(-8px);
+}
+
+.skill-card:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 15px 50px rgba(14, 165, 233, 0.15);
+}
+
+/* Minimal skill modal (lightweight essentials only) */
+.skill-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 2000;
+}
+
+.skill-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.skill-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.skill-modal-title {
+  margin: 0 2rem 0.75rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.skill-modal-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.skill-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-modal-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .skill-modal-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-modal-section {
+  margin-top: 0.5rem;
+}
+
+.skill-modal-section-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.skill-modal-list,
+.skill-modal-badges {
+  list-style: disc inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-left: 0.5rem;
+}
+
+.skill-modal-badges {
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+
+.skill-modal-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.skill-modal-list a:hover,
+.skill-modal-list a:focus {
+  text-decoration: underline;
+}
+
+.skill-modal-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--accent-10);
+  color: var(--accent);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  border: none;
+}
+
+.skill-card-expand {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--accent-10);
+  color: var(--accent);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover .skill-card-expand,
+.skill-card:focus .skill-card-expand {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 
 /* About Section */
 .about-content {
