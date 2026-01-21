@@ -1,0 +1,66 @@
+.Header{
+    font-size: 52px;
+}
+
+.paragraph{
+    font-size: 24px;
+}
+
+button{
+    transition: 300ms;
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+p::after{
+    content: "  Hey my name is ";
+}
+
+
+@media(max-width: 1240px) {
+    .Header{
+        font-size: 52px;
+    }
+    .paragraph {
+        font-size: 24px;
+    }
+}
+@media(max-width: 1024px) {
+    .Header{
+        font-size: 50px;
+    }
+    .paragraph {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 768px) {
+    .Header{
+        font-size: 48px;
+    }
+    .paragraph {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 640px) {
+    .Header{
+        font-size: 42px;
+    }
+    .paragraph {
+        font-size: 20px;
+    }
+}
+
+@media(max-width :480px) {
+    .Header{
+        font-size: 32px;
+    }
+    .paragraph {
+        font-size: 18px;
+    }
+}
